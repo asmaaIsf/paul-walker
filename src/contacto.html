@@ -1,0 +1,42 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            background-color:#b3a5c9;
+        }
+    </style>
+    <include src="./header.html"></include>
+    <main>
+        <h1 style="text-align: center">Contáctanos</h1>
+        <p>Si desea contactar con nosotros, por favor complete el siguiente formulario.</p>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input id="nombre" class="form-control" type="text" placeholder="nombre" aria-label="default input example" required>
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                <textarea id="comentario" class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="customRange2" class="form-label">Puntua el servicio</label>
+                <br>
+                <p>0<input id="puntaje" type="range" class="form-range" min="0" max="5" id="customRange2">5</p>
+            </div>    
+
+            <button id="boton" type="submit" class="btn btn-primary">Enviar</button>
+    </main>
+    <script src="./js/funciones.js"></script>
+    <include src="./footer.html"></include>
+    
+</body>
+</html>

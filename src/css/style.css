@@ -23,7 +23,7 @@ body {
 main {
     flex: 1;
     margin: 20px;
-    padding: 100px;
+    padding: 100px 15px 15px 15px;
 }
 
 nav ul {
@@ -32,6 +32,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -55,6 +56,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .footer-info {
@@ -128,6 +130,7 @@ footer {
     justify-content: space-between;
     gap: 20px;
     margin-top: 30px;
+    flex-wrap: wrap;
     /* Espacio entre tarjetas */
 }
 
@@ -135,6 +138,7 @@ footer {
     flex: 1;
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 /*frases*/
@@ -153,3 +157,50 @@ footer {
     box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
     min-height: 50px;
 }
+
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+    .main {
+        padding: 80px 15px;
+    }
+
+    .swiper {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main {
+        padding: 60px 15px;
+    }
+
+    .swiper {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 40px 10px;
+    }
+
+    .swiper {
+        height: 200px;
+    }
+
+    .carousel-cell img {
+        height: 300px;
+    }
+
+    .card-container {
+        display: grid;
+        /* Cambiar a grid */
+        grid-template-columns: 1fr;
+        /* Una columna para dispositivos más pequeños */
+    }
+
+    .card {
+        margin-bottom: 15px;
+        /* Espacio entre tarjetas */
+    }
